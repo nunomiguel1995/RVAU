@@ -1,0 +1,214 @@
+fileFormatVersion: 2
+guid: 0b4b8d6a73c150d4682b7bb49f6cd479
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: crater1
+    100002: Flame_1
+    100004: Flame_2
+    100006: Flame_3
+    100008: Flame_4
+    100010: flame_grp
+    100012: //RootNode
+    100014: Rkt_GlobalCtrl_01
+    100016: Rkt_GlobalScale_01
+    100018: Rkt_Main_01
+    100020: Rkt_Root_ctrl_01
+    100022: rocket
+    100024: tentacle
+    100026: Tnt_cnstrn_grp_01
+    100028: Tnt_cnstrn_grp_02
+    100030: Tnt_cnstrn_grp_03
+    100032: Tnt_cnstrn_grp_04
+    100034: Tnt_cnstrn_grp_05
+    100036: Tnt_cnstrn_grp_06
+    100038: Tnt_cnstrn_grp_07
+    100040: Tnt_ctrl_01
+    100042: Tnt_ctrl_02
+    100044: Tnt_ctrl_03
+    100046: Tnt_ctrl_04
+    100048: Tnt_ctrl_05
+    100050: Tnt_ctrl_06
+    100052: Tnt_ctrl_07
+    100054: Tnt_Ctrls_01
+    100056: Tnt_Geo_01
+    100058: Tnt_GlobalCtrl_01
+    100060: Tnt_GlobalScale_01
+    100062: Tnt_Joints_grp_01
+    100064: Tnt_key_grp_01
+    100066: Tnt_key_grp_02
+    100068: Tnt_key_grp_03
+    100070: Tnt_key_grp_04
+    100072: Tnt_key_grp_05
+    100074: Tnt_key_grp_06
+    100076: Tnt_key_grp_07
+    100078: Tnt_Main_01
+    100080: Tnt_nt_01
+    100082: Tnt_nt_02
+    100084: Tnt_nt_03
+    100086: Tnt_nt_04
+    100088: Tnt_nt_05
+    100090: Tnt_nt_06
+    100092: Tnt_nt_07
+    100094: Tnt_nt_08
+    100096: Tnt_nt_09
+    100098: Tnt_nt_10
+    100100: Tnt_Root_ctrl_01
+    400000: crater1
+    400002: Flame_1
+    400004: Flame_2
+    400006: Flame_3
+    400008: Flame_4
+    400010: flame_grp
+    400012: //RootNode
+    400014: Rkt_GlobalCtrl_01
+    400016: Rkt_GlobalScale_01
+    400018: Rkt_Main_01
+    400020: Rkt_Root_ctrl_01
+    400022: rocket
+    400024: tentacle
+    400026: Tnt_cnstrn_grp_01
+    400028: Tnt_cnstrn_grp_02
+    400030: Tnt_cnstrn_grp_03
+    400032: Tnt_cnstrn_grp_04
+    400034: Tnt_cnstrn_grp_05
+    400036: Tnt_cnstrn_grp_06
+    400038: Tnt_cnstrn_grp_07
+    400040: Tnt_ctrl_01
+    400042: Tnt_ctrl_02
+    400044: Tnt_ctrl_03
+    400046: Tnt_ctrl_04
+    400048: Tnt_ctrl_05
+    400050: Tnt_ctrl_06
+    400052: Tnt_ctrl_07
+    400054: Tnt_Ctrls_01
+    400056: Tnt_Geo_01
+    400058: Tnt_GlobalCtrl_01
+    400060: Tnt_GlobalScale_01
+    400062: Tnt_Joints_grp_01
+    400064: Tnt_key_grp_01
+    400066: Tnt_key_grp_02
+    400068: Tnt_key_grp_03
+    400070: Tnt_key_grp_04
+    400072: Tnt_key_grp_05
+    400074: Tnt_key_grp_06
+    400076: Tnt_key_grp_07
+    400078: Tnt_Main_01
+    400080: Tnt_nt_01
+    400082: Tnt_nt_02
+    400084: Tnt_nt_03
+    400086: Tnt_nt_04
+    400088: Tnt_nt_05
+    400090: Tnt_nt_06
+    400092: Tnt_nt_07
+    400094: Tnt_nt_08
+    400096: Tnt_nt_09
+    400098: Tnt_nt_10
+    400100: Tnt_Root_ctrl_01
+    2100000: Rocket_Final
+    2100002: Tentacle_Final
+    2300000: crater1
+    2300002: Flame_1
+    2300004: Flame_2
+    2300006: Flame_3
+    2300008: Flame_4
+    2300010: rocket
+    3300000: crater1
+    3300002: Flame_1
+    3300004: Flame_2
+    3300006: Flame_3
+    3300008: Flame_4
+    3300010: rocket
+    4300000: rocket
+    4300002: Flame_1
+    4300004: Flame_2
+    4300006: Flame_3
+    4300008: Flame_4
+    4300010: crater1
+    4300012: tentacle
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: tentacle
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
