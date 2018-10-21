@@ -27,6 +27,5 @@ public class BulletScript : MonoBehaviour {
                 Destroy(temp_bullet, 5f);
             }
         }
-
 	}
 }
