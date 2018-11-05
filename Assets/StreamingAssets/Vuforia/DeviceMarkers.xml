@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="space" size="1.000000 0.562500" />
-    <ImageTarget name="ship" size="0.070000 0.038739" />
+    <ImageTarget name="cannon" size="1.000000 0.622500" />
+    <ImageTarget name="floor" size="1.000000 0.700000" />
   </Tracking>
 </QCARConfig>
