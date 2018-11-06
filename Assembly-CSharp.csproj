@@ -62,10 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\BulletScript.cs" />
-    <Compile Include="Assets\EnemyScript.cs" />
+    <Compile Include="Assets\CollisionScript.cs" />
     <Compile Include="Assets\EnemySpawner.cs" />
-    <Compile Include="Assets\Movement.cs" />
-    <Compile Include="Assets\TrackableScript.cs" />
+    <Compile Include="Assets\GameLogic.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
     <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />

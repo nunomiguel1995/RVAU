@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour {
     public GameObject enemy;                // The enemy prefab to be spawned.
-    public float spawnTime = 1f;            // How long between each spawn.
+    public float spawnTime;            // How long between each spawn.
     public Transform[] spawnPoints;         // An array of the spawn points this enemy can spawn from.
 
     private float spawnTimer;
@@ -13,6 +13,7 @@ public class EnemySpawner : MonoBehaviour {
     void Start()
     {}
 
+    //Spawns enemies
     void Spawn()
     {
         if (activeSpawner)
@@ -28,25 +29,41 @@ public class EnemySpawner : MonoBehaviour {
         }
     }
 
+    // Updates enemies position
     void Update()
     {
-        if (!activeSpawner)
+        if (activeSpawner)
         {
-            CancelInvoke("Spawn");
-            foreach (GameObject g in spawns)
-            {
-                Destroy(g);
-            }
-        }
-        else
-        { 
-            if(!IsInvoking()) InvokeRepeating("Spawn", 1, 0.5f);
-
             foreach (GameObject g in spawns)
             {
                 if (g != null)
                     g.transform.position += new Vector3(0.005f, 0, 0);
             }
         }
+    }
+
+    // Stops spawner momentarily while deleting every enemy
+    public void ResetGame()
+    {
+        CancelInvoke("Spawn");
+        foreach(GameObject g in spawns)
+        {
+            DestroyImmediate(g);
+        }
+        activeSpawner = true;
+    }
+
+    // Starts the game
+    public void StartGame()
+    {
+        InvokeRepeating("Spawn", 1, spawnTime);
+        activeSpawner = true;
+    }
+
+    // Stops the game
+    public void StopGame()
+    {
+        CancelInvoke("Spawn");
+        activeSpawner = false;
     }
 }

@@ -98,6 +98,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = true;
 
+        // Checks if image target is on camera, to activate game logic
         if (mTrackableBehaviour.TrackableName == "floor")
         {
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = true;
@@ -106,7 +107,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         if (mTrackableBehaviour.TrackableName == "cannon")
         {
-
+            GameObject.FindGameObjectWithTag("Cannon").GetComponent<BulletScript>().activeShooter = true;
         }
     }
 
@@ -129,6 +130,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         foreach (var component in canvasComponents)
             component.enabled = false;
 
+        // Checks if image target is on camera, to deactivate game logic
         if(mTrackableBehaviour.TrackableName == "floor")
         {
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = false;
@@ -137,7 +139,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         if(mTrackableBehaviour.TrackableName == "cannon")
         {
-
+            GameObject.FindGameObjectWithTag("Cannon").GetComponent<BulletScript>().activeShooter = false;
         }
 
     }

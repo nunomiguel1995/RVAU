@@ -21,13 +21,12 @@ GameObject:
   - component: {fileID: 4208397765417726}
   - component: {fileID: 33813392907680262}
   - component: {fileID: 23697543501751866}
-  - component: {fileID: 135546197489105364}
   - component: {fileID: 54195142911334578}
   - component: {fileID: 114021230156170896}
-  - component: {fileID: 114973479281150392}
+  - component: {fileID: 65349627341300760}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1672651634345616}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.0223, y: 0.0172, z: 0.0029}
+  m_LocalPosition: {x: 7.5626707, y: -2.6925168, z: -0.5644212}
   m_LocalScale: {x: 0.05000003, y: 0.05, z: 0.05000003}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,6 +101,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 2
+--- !u!65 &65349627341300760
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1672651634345616}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.5, z: 1.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114021230156170896
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -114,27 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1672651634345616}
---- !u!114 &114973479281150392
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1672651634345616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b58029863a0edb4cbc0f073b0faa754, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0
---- !u!135 &135546197489105364
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1672651634345616}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  bullet: {fileID: 1035762942552632, guid: 7c991e6d768e16349acde5f17f25f639, type: 2}
+  scoreboard: {fileID: 114822021296145786, guid: 5ded38392e6232a459ace2315ed02b1f,
+    type: 2}
