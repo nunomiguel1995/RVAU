@@ -51,6 +51,7 @@ public class EnemySpawner : MonoBehaviour {
             DestroyImmediate(g);
         }
         activeSpawner = true;
+        GameObject.FindGameObjectWithTag("Floor").GetComponent<GameLogic>().setCannonHealth(3);
     }
 
     // Starts the game
