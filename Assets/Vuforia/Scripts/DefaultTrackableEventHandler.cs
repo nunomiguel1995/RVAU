@@ -103,6 +103,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = true;
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().activeSpawner = true;
         }
+
+        if (mTrackableBehaviour.TrackableName == "cannon")
+        {
+
+        }
     }
 
 
@@ -128,6 +133,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         {
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = false;
             GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().activeSpawner = false;
+        }
+
+        if(mTrackableBehaviour.TrackableName == "cannon")
+        {
+
         }
 
     }
