@@ -1,0 +1,9 @@
+
+*.cache
+*.cache
+.vs/RVAU/v15/.suo
+*.ide
+*.csproj
+*.asset
+Library/metadata/5a/5a917f0af64a6423093132dab321c15f
+*.config

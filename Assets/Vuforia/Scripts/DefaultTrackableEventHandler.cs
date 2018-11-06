@@ -54,16 +54,12 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.TRACKED ||
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
-            Debug.Log("Trackable Found");
-
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
             OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NO_POSE)
         {
-            Debug.Log("Trackable Lost");
-
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
             OnTrackingLost();
         }
@@ -97,12 +93,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Enable canvas':
         foreach (var component in canvasComponents)
             component.enabled = true;
-
-        if (mTrackableBehaviour.TrackableName == "floor")
-        {
-            GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = true;
-            GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().activeSpawner = true;
-        }
     }
 
 
@@ -123,13 +113,6 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
         // Disable canvas':
         foreach (var component in canvasComponents)
             component.enabled = false;
-
-        if(mTrackableBehaviour.TrackableName == "floor")
-        {
-            GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = false;
-            GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().activeSpawner = false;
-        }
-
     }
 
     #endregion // PROTECTED_METHODS
