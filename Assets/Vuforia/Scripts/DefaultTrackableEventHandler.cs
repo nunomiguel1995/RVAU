@@ -107,6 +107,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         if (mTrackableBehaviour.TrackableName == "cannon")
         {
+            GameObject.FindGameObjectWithTag("Floor").GetComponent<BulletScript>().enabled = true;
             GameObject.FindGameObjectWithTag("Cannon").GetComponent<BulletScript>().activeShooter = true;
         }
     }
@@ -139,6 +140,7 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         if(mTrackableBehaviour.TrackableName == "cannon")
         {
+            GameObject.FindGameObjectWithTag("Floor").GetComponent<BulletScript>().enabled = false;
             GameObject.FindGameObjectWithTag("Cannon").GetComponent<BulletScript>().activeShooter = false;
         }
 

@@ -24,7 +24,7 @@ public class EnemySpawner : MonoBehaviour {
                 int spawnPointIndex = Random.Range(0, spawnPoints.Length);
                 GameObject spawn = Instantiate(enemy, spawnPoints[spawnPointIndex].position, spawnPoints[spawnPointIndex].rotation);
                 spawns.Add(spawn);
-                Destroy(spawn, 3.0f);
+                Destroy(spawn, 4.0f);
             }
         }
     }

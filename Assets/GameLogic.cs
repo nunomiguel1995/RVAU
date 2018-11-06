@@ -10,6 +10,8 @@ public class GameLogic : MonoBehaviour {
     private Button startGame;
     private Button stopGame;
 
+    private int cannonHealth = 3;
+
     // Initializes buttons and dropdown value
     void Start () {
         difficulty = GameObject.Find("DifficultyDropdown").GetComponent<Dropdown>();
@@ -78,12 +80,33 @@ public class GameLogic : MonoBehaviour {
     // Starts the game with the difficulty according to the dropdown value
     void StartGame()
     {
+        GameObject.Find("GameStateLabel").GetComponent<Text>().text = "Now playing";
+        GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().enabled = true;
         GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().StartGame();
     }
 
     // Stops the running game
     void StopGame()
     {
+        GameObject.Find("GameStateLabel").GetComponent<Text>().text = "Game stopped";
         GameObject.FindGameObjectWithTag("Floor").GetComponent<EnemySpawner>().StopGame();
+    }
+
+    // Returns the cannon health
+    public int getCannonHealth()
+    {
+        return cannonHealth;
+    }
+
+    // Sets the cannon health
+    public void setCannonHealth(int c)
+    {
+        cannonHealth = c;
+    }
+
+    // Recuces cannon health
+    public void reduceCannonHealth()
+    {
+        cannonHealth--;
     }
 }

@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-C:/Users/Nuno/Documents/RVAU-Project/project.apk
+C:/Users/Nuno/Documents/RVAU/project.apk
 SceneListBegin?
 Assets/Scenes/SampleScene.unity
 SceneListEnd?

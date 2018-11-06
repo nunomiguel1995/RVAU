@@ -128,3 +128,4 @@ MonoBehaviour:
   bullet: {fileID: 1035762942552632, guid: 7c991e6d768e16349acde5f17f25f639, type: 2}
   scoreboard: {fileID: 114822021296145786, guid: 5ded38392e6232a459ace2315ed02b1f,
     type: 2}
+  cannonHealth: 3
